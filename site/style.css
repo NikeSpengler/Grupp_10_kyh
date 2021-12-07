@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* Här vi kan skapa veriabel för våra färger */
+body {
+  background-color: #1010ca;
+  color: yellow;
+}
+
+h1 {
+  font-size: large;
+}
+/*# sourceMappingURL=style.css.map */
