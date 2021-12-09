@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #333;
+    --dark-color:#002240;
+    --light-color: lightgrey;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*----------- Links ----------*/
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: darkred;
+}
+
+
+/*----------- headings ----------*/
+h1, 
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    size: 100%;
+}
+
+/*----------- navbar ------------*/
+.navbar {
+    background-color: var(--primary-color);
+    font-weight: 500;
+    color: #333;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #333;
+    padding: auto;
+    margin: 0 5px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+
+/*----- showcase ------*/
+.showcase{
+    height: 650px;
+    background-color: var(--primary-color);
+    color: #333;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+
+}
+
+.showcase .about-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.fotboll-text {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+/* Centered text */
+.centered {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.fotboll-img {
+    width: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+}
+
+
+
+/* ----- Skills ------*/
+.stats {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/*--- Contact ------*/
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.card-cli {
+    padding: 0;
+    margin: 0;
+}
+
+.cli {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-color: #333;
+    color: lightgrey;
+}
+
+.cli .mail-icon {
+    width: 300px;
+}
+
+
+/* ------------ CV/ About -----------*/
+.CV-main .container{
+    padding-bottom: 200px;
+}
+
+.CV-text2{
+    text-align: center;
+}
+
+.CV-header {
+    font-weight: bold;
+    font-style:var(--dark-color)
+}
+
+
+/*------- Footer -----*/
+.footer{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.footer .flex{
+    flex-wrap: wrap;
+}
+
+.footer .card{
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.footer .card:hover{
+    transform: translateY(-10px);
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footer .upp {
+    text-align: center;
+}
+
+
+/*---- Animation ------*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTopp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/*------------ Media Queries -----------*/
+/*----- Tablets and under ----*/
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .footer .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase .about-text {
+        text-align: center;
+        margin-top: 40px;
+
+    }
+    .showcase .about-img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cli .grid {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cli .mail-icon {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+/*--------- Mobile ------*/
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
