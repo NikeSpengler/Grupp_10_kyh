@@ -55,7 +55,7 @@ img {
 
 /*----------- navbar ------------*/
 .navbar {
-    background-color: var(--primary-color);
+    background: transparent;
     color: #333;
     height: 70px;
 }
@@ -84,7 +84,7 @@ img {
 /*----- showcase ------*/
 .showcase{
     height: 650px;
-    background-color: var(--primary-color);
+    background: transparent;
     color: #333;
     position: relative;
 }
@@ -107,7 +107,11 @@ img {
     position: relative;
     text-align: center;
     color: white;
-  }
+}
+
+.fotboll.text {
+    animation: slideInFromRight 1s ease-in;
+}
 
 /* Centered text */
 .centered {
@@ -123,7 +127,7 @@ img {
     padding-top: 50px;
     padding-bottom: 50px;
     justify-self: flex-end;
-    animation: slideInFromRight 1s ease-in;
+    animation: slideInFromTopp 1s ease-in;
 }
 
 
@@ -222,7 +226,7 @@ img {
 
 @keyframes slideInFromTopp {
     0% {
-        transform: translateY(100%);
+        transform: translateY(-100%);
     }
 
     100% {
@@ -232,7 +236,7 @@ img {
 
 @keyframes slideInFromBottom {
     0% {
-        transform: translateX(100%);
+        transform: translateY(100%);
     }
 
     100% {
