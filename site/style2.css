@@ -56,7 +56,6 @@ img {
 /*----------- navbar ------------*/
 .navbar {
     background-color: var(--primary-color);
-    font-weight: 500;
     color: #333;
     height: 70px;
 }
@@ -68,7 +67,7 @@ img {
 .navbar a {
     color: #333;
     padding: auto;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .navbar .flex {
@@ -90,6 +89,7 @@ img {
 }
 
 .showcase .about-text {
+    font-size: 19px;
     animation: slideInFromLeft 1s ease-in;
 }
 
