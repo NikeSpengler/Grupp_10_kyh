@@ -6,8 +6,10 @@ Såsom login/ registrera funktionalitet och kontaktfunktionalitet.
 
 Innehåller JavaScript, Html och CSS. 
 
+
+
 Av: 
-Nike Spengler
-Amir Nabizadeh
-Maria Rubil
+Nike Spengler,
+Amir Nabizadeh,
+Maria Rubil,
 Daniel Naesenius
